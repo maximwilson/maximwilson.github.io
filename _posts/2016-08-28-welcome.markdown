@@ -6,8 +6,8 @@ date:   2016-08-28 13:12:09 -0400
 New York City is home to one of the oldest (it's 3rd behind XX and XX) and the largest (in terms of miles traversed) subway systems in the world. Explore how the system has changed since the end of World War II (when the competing companies building their respective lines joined forces)
 
 
-Check out the the MTA's [Dope Site][jekyll-docs] and Wikipedia [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Check out the the MTA's [Dope Site][jekyll-docs] and Wikipedia [Jekyll’s GitHub repo][jekyll-gh].
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
