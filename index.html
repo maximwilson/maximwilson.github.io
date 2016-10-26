@@ -3,10 +3,10 @@ layout: default
 images:
   - image_path: /images/maps/system_1948.gif
     title: Map 1948
-  	link: https://maximwilson.github.io/maps/
+  	link: maximwilson.github.io/maps/
   - image_path: /images/cars/Built1963.jpg
     title: Car 1963
-  	link: https://maximwilson.github.io/cars/			
+  	link: maximwilson.github.io/cars/		
 ---
 
 <div class="home">
@@ -15,14 +15,14 @@ images:
 
 <p>For more information and the source of all images visit <a href="http://www.nycsubway.org/wiki/Main_Page" target="_blank">nycsubway.org</a>, the MTA's <a href="http://web.mta.info/nyct/facts/ffsubway.htm" target="_blank">facts and figures page</a>, and <a href="https://en.wikipedia.org/wiki/New_York_City_Subway_map" target="_blank">Wikipedia</a>.</p>
 
-  <ul class="photo-gallery">
-    {% for image in page.images %}
-      <li>
-	    <a href="{{ image.link }}">	
-	      <img src="{{ image.image_path }}" alt="{{ image.title }}">
-	    </a>
-	  </li>
-    {% endfor %}
-  </ul>
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li>
+      <a href="{{ image.link }}">	
+        <img src="{{ image.image_path }}" alt="{{ image.title }}">
+	  </a>
+	</li>
+  {% endfor %}
+</ul>
 
 </div>
