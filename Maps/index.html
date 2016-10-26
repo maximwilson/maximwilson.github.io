@@ -11,12 +11,12 @@ images:
     title: 1964		
 ---
 
-  <h1>New York Subway Maps</h1>
+  <p>The subway map has gone through many changes as it attempts to strike a delicate balance between readability and geographic accuracy.</p>
 
 <ul class="photo-gallery">
   {% for image in page.images %}
     <li>
-	  <img src="{{ image.image_path  }}" alt="{{ image.title }}">
+	  <img src="{{ image.image_path }}" alt="{{ image.title }}">
 	</li>
   {% endfor %}
 </ul>	
