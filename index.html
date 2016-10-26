@@ -3,10 +3,10 @@ layout: default
 images:
   - image_path: /images/maps/system_1948.gif
     title: Map 1948
-  	link: maximwilson.github.io/maps/
+	link: maximwilson.github.io/maps/
   - image_path: /images/cars/Built1963.jpg
     title: Car 1963
-  	link: maximwilson.github.io/cars/
+	link: maximwilson.github.io/cars/
 ---
 
 <div class="home">
@@ -17,11 +17,9 @@ images:
 
   <ul>
     {% for image in page.images %}
-      <li>
-        <a href="{{ image.link }}">	
-          <img src="{{ image.image_path }}" alt="{{ image.title }}">
-	    </a>
-	  </li>
+    <li>
+      <a href="{{ image.link }}"><img src="{{ image.image_path }}" alt="{{ image.title }}"></a>
+    </li>
     {% endfor %}
   </ul>
 
