@@ -5,17 +5,45 @@ permalink: /maps/
 images:
   - image_path: /images/maps/1925.jpg
     title: 1925
+  - image_path: /images/maps/system_1939.jpg
+    title: 1939
   - image_path: /images/maps/system_1948.gif
     title: 1948
   - image_path: /images/maps/system_1959.gif
     title: 1959
   - image_path: /images/maps/system_1964map.jpg
-    title: 1964			
+    title: 1964
+  - image_path: /images/maps/system_1966_a.gif
+    title: 1966
+  - image_path: /images/maps/calcagno-1967-system.gif
+    title: 1967
+  - image_path: /images/maps/calcagno-1968-system.gif
+    title: 1968
+  - image_path: /images/maps/calcagno-1969-system.gif
+    title: 1969
+  - image_path: /images/maps/irvingtrust-july68.png
+    title: 1968sum
+  - image_path: /images/maps/system_1972.jpg
+    title: 1972
+  - image_path: /images/maps/calcagno-1974-system.gif
+    title: 1974
+  - image_path: /images/maps/calcagno-1978-system.gif
+    title: 1978
+  - image_path: /images/maps/system_1987.gif
+    title: 1987
+  - image_path: /images/maps/1997.jpg
+    title: 1997
+  - image_path: /images/maps/calcagno-1997-august-sub-rus.gif
+    title: 1997sum
+  - image_path: /images/maps/calcagno-1999-august-sub-rus.gif
+    title: 1999
+  - image_path: /images/maps/2014.jpg
+    title: 2014
 ---
 
   <p>The subway map has gone through many changes as it attempts to strike a delicate balance between readability and geographic accuracy. The following maps are a compendium of artist renderings and official city-commisioned maps.</p>
   
-<ul class="photo-gallery">
+<ul>
   {% for image in page.images %}
     <li>
 	  <img src="{{ image.image_path }}" alt="{{ image.title }}">
