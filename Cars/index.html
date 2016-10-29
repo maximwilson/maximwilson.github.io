@@ -31,12 +31,26 @@ images:
     title: 2012
 ---
 
-<p>Even today there isn't a single type of subway car on the New York subway lines. There are two main reasons for this: 1) Cars have to fit within the structure of lines built to different specifications by 3 separate tunneling companies; and 2) The city hires different contractors to build the cars themselves. So New Yorkers have to live with subways with different seat configurations and subway lines without countdown clocks. They say variety is the spice of life.</p>
+<p>There are 6,407 active subway cars in New York City. But there isn't a single type of car across the system. There are two main reasons for this: 1) Cars have to fit within the structure of lines built to different specifications by 3 separate tunneling companies; and 2) The city hires different contractors to build the cars themselves. So New Yorkers have to live with subways with different seat configurations and subway lines without countdown clocks (the different cars make it difficult to use a uniform tracking system). They say variety is the spice of life.</p>
 
-<ul>
+
+
+<div class="slideshow-container">
   {% for image in page.images %}
-    <li>
-	  <img src="{{ image.image_path }}" alt="{{ image.title }}">
-	</li>
+  <div class="mySlides fade">
+    <img src="{{ image.image_path }}" style="width:100%">
+    <div class="caption">{{ image.title }}</div>
+  </div>
   {% endfor %}
-</ul>	
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>

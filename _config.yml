@@ -9,7 +9,7 @@
 title: New York City Subways Over Time
 email: maxim.wilson@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This website displays various maps and cars in a custom timeline slideshow (in development). Images were originally compiled and are properly archived on the MTA and nycsubway.org websites.
+  This website displays various maps and cars in a custom timeline slideshow (in development). Images were originally compiled and are properly archived on the MTA and nycsubway.org websites. Site developed from a base Jekyll build.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: maximwilson9
