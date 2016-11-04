@@ -3,31 +3,31 @@ title: Cars
 permalink: /cars/
 images:
   - image_path: /images/cars/Built1904.jpg
-    title: 1904
+    title: Built in 1904
   - image_path: /images/cars/Built1919.jpg
-    title: 1919
+    title: Built in 1919
   - image_path: /images/cars/Built1934.jpg
-    title: 1934
+    title: Built in 1934
   - image_path: /images/cars/Built1936.jpg
-    title: 1936
+    title: Built in 1936
   - image_path: /images/cars/Built1938.jpg
-    title: 1938
+    title: Built in 1938
   - image_path: /images/cars/Built1950.jpg
-    title: 1950
+    title: Built in 1950
   - image_path: /images/cars/Built1963.jpg
-    title: 1963
+    title: Built in 1963
   - image_path: /images/cars/Built1966.jpg
-    title: 1966
+    title: Built in 1966
   - image_path: /images/cars/Built1969.jpg
-    title: 1969
+    title: Built in 1969
   - image_path: /images/cars/Built1973.jpg
-    title: 1973
+    title: Built in 1973
   - image_path: /images/cars/Built1984.jpg
-    title: 1984
+    title: Built in 1984
   - image_path: /images/cars/Built2001.jpg
-    title: 2001
+    title: Built in 2001
   - image_path: /images/cars/Built2012.jpg
-    title: 2012
+    title: Built in 2012
 ---
 
 <!DOCTYPE html>
@@ -65,9 +65,15 @@ images:
     {% include footer.html %}
     <script src="/images/Ideal-Image-Slider-master/ideal-image-slider.js"></script>
     <script src="/images/Ideal-Image-Slider-master/extensions/captions/iis-captions.js"></script>
+    <script src="/images/Ideal-Image-Slider-master/extensions/bullet-nav/iis-bullet-nav.js"></script>
     <script>
-    	var slider = new IdealImageSlider.Slider('#slider');
+      var slider = new IdealImageSlider.Slider({
+        selector: '#slider',
+        height: 500, // Required but can be set by CSS
+        interval: 1000000
+      });
       slider.addCaptions();
+      slider.addBulletNav();
       slider.start();
   	</script>
   </body>
