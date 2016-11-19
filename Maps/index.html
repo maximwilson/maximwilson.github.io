@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Maps
 permalink: /maps/
 images:
@@ -42,13 +41,53 @@ images:
   - image_path: /images/maps/2014.jpg
     title: 2014
 ---
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="/images/Ideal-Image-Slider-master/ideal-image-slider.css">
+  <link rel="stylesheet" href="/images/Ideal-Image-Slider-master/themes/default/default.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
+
+  <body>
+
+
+    {% include header.html %}
+    
+    <div class="page-content">
+      <div class="wrapper">
   <p>The subway map has gone through many changes as it attempts to strike a delicate balance between readability and geographic accuracy. The following maps are a compendium of artist renderings and official city-commisioned maps.</p>
   
-<ul>
-  {% for image in page.images %}
-    <li>
-	  <img src="{{ image.image_path }}" alt="{{ image.title }}">
-	</li>
-  {% endfor %}
-</ul>	
+        <div id="slider">
+          {% for image in page.images %}
+            <img src="{{ image.image_path }}" style="width:100%" alt="{{ image.title }}">
+          {% endfor %}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script src="/images/Ideal-Image-Slider-master/ideal-image-slider.js"></script>
+    <script src="/images/Ideal-Image-Slider-master/extensions/captions/iis-captions.js"></script>
+    <script src="/images/Ideal-Image-Slider-master/extensions/bullet-nav/iis-bullet-nav.js"></script>
+    <script>
+      var slider = new IdealImageSlider.Slider({
+        selector: '#slider',
+        height: 1000, // Required but can be set by CSS
+        interval: 1000000
+      });
+      slider.addBulletNav();
+      slider.start();
+  	</script>
+  </body>
+
+</html>
