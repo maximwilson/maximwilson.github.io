@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: New York City Subways Over Time
+title: NYC Subways Over Time
 email: maxim.wilson@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This website displays various maps and cars in a custom timeline slideshow (developed from the ideal-image-slider base). Images were originally compiled and are properly archived on the MTA and nycsubway.org websites. Site developed from a base Jekyll build.
